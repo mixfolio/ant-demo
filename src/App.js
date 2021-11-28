@@ -95,9 +95,12 @@ class App extends React.Component {
               overflow: 'hidden'  }}
           >
             <div className="map">
-              <Row style={{ justifyContent: 'space-between' }}>
+              <Row style={{ 
+                justifyContent: 'space-between', 
+                overflow: 'hidden auto',
+                border: '1px solid red'}}>
                 <LeftPanel/>
-                <RightPanel/> 
+                {/* <RightPanel/>  */}
               </Row>
             <AppDrawer/>
                 
