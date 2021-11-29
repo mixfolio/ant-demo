@@ -22,7 +22,12 @@ const data = [
 
 
 
-const LeftPanel = () => {
+const LeftPanel = ({showDrawer}) => {
+
+    // const dispatch = useDispatch()
+    // const showDrawer() {
+
+    // }
     return (
         <Card bodyStyle={{ padding: "0" }} style={{ width: 360 }}>
 
@@ -36,7 +41,9 @@ const LeftPanel = () => {
                             <EyeOutlined />
                             <FilterOutlined />
                             <SearchOutlined />
-                            <AlignLeftOutlined />
+                            <AlignLeftOutlined 
+                                onClick = {showDrawer} 
+                                />
                         </Space>
                     </List.Item>}
             />

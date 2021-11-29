@@ -44,7 +44,7 @@
 
 .map {
     position: relative;
-    height: 100%;
+    height: calc(100vh - 64px - 48px) ;
     background: url(./assets/images/map.png) no-repeat  center;
    background-size:cover;
 }
@@ -67,4 +67,22 @@
 main {
     height: 100%;
 
+}
+
+
+
+.ant-menu-item .anticon {
+    font-size: 20px;
+}
+
+.ant-menu.ant-menu-inline-collapsed > .ant-menu-item {
+    padding: 0 calc(50% - 20px / 2);
+}
+
+.ant-menu.ant-menu-inline-collapsed > .ant-menu-item .anticon {
+    font-size: 20px;
+}
+
+.ant-drawer-mask {
+    display: none;
 }
