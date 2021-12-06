@@ -10,6 +10,7 @@ import {
     EnvironmentOutlined,
     BankOutlined
   } from '@ant-design/icons';
+import { NavLink } from 'react-router-dom';
 
   const { Sider} = Layout;
 
@@ -26,16 +27,19 @@ const LeftSider = ({collapsed}) => {
                 <Menu.Item
                     key="1"
                     icon={<HomeOutlined />}
+                    
                 >
-                    Главная
+                   <NavLink to="/home">Главная</NavLink>
                 </Menu.Item>
                 <Menu.Item key="2" icon={<CopyOutlined />}>
 
-                    Заявки
+                <NavLink to="/tables">Таблицы</NavLink>
                     <Badge count={9} />
                 </Menu.Item>
 
-                <Menu.Item key="3" icon={<SnippetsOutlined />}>Поручения</Menu.Item>
+                <Menu.Item key="3" icon={<SnippetsOutlined />}>
+                    <NavLink to="/cards">Карточки</NavLink>
+                </Menu.Item>
                 <Menu.Item key="4" icon={<FileDoneOutlined />}>Акты</Menu.Item>
                 <Menu.Item key="5" icon={<EnvironmentOutlined />}>ЗУ</Menu.Item>
                 <Menu.Item key="6" icon={<BankOutlined />}>ОКС</Menu.Item>

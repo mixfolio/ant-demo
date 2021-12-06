@@ -7,9 +7,9 @@
     margin-left: 48px;
 }
 
-/* html, body, #root {
+html, body, #root {
     height: 100%;
-} */
+}
 
 .ant-layout-header {
     display: flex;

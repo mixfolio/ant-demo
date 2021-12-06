@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { Layout, Row} from "antd";
-import  AppDrawer from "./components/AppDrawer/AppDrawer";
-import LeftPanel from "./components/LeftPanel/LeftPanel";
-import RightPanel from "./components/RightPanel";
+import { Layout} from "antd";
 import LeftSider from "./components/LeftSider";
 import AppHeader from "./components/AppHeader";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./components/AppRouter";
 const { Content } = Layout;
 
 
 const App = () => {
+
   const [collapsed, setCollapsed] = useState(true)
 
   const toggle = () => {
@@ -27,12 +27,13 @@ const App = () => {
   };
 
   return (
+    <BrowserRouter>
     <Layout
-      style={{ height: "100%" }}
+      style={{ minHeight: "100%" }}
     >
-     <LeftSider collapsed={collapsed}/>
+      <LeftSider collapsed={collapsed} />
       <Layout className="site-layout">
-       <AppHeader  toggle={toggle} collapsed={collapsed}/>
+        <AppHeader toggle={toggle} collapsed={collapsed} />
         <Content
           style={{
             padding: '0 24px ',
@@ -40,30 +41,11 @@ const App = () => {
             overflow: 'hidden'
           }}
         >
-          <div className="map">
-            <Row style={{
-              justifyContent: 'space-between',
-              overflow: 'hidden auto',
-            }}>
-              <LeftPanel showDrawer={showDrawer}/>
-              <RightPanel />
-            </Row>
-           
-            <AppDrawer visible={visible} onClose={onClose}/>
-          </div>
-
-
-
-
-
-
-
+          <AppRouter />
         </Content>
-
-
-
       </Layout>
     </Layout>
+    </BrowserRouter>
   );
 
 }
