@@ -3,7 +3,7 @@ export const cards = [
         id: 1,
         image: "https://picsum.photos/id/21/200/100",
         title: "Ant Design Card",
-        description: "A card can be used to display content related to a single subject. The content can consist of multiple elements of varying types and sizes." 
+        description: "A card can be used to display content related to a single subject. The content can consist of multiple elements of varying types and sizes. " 
     },
     {
         id: 2,

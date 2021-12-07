@@ -4,7 +4,6 @@ import {authRoutes, publicRoutes } from '../routes';
 
 const AppRouter = () => {
     const isAuth = false
-    console.log(publicRoutes)
     return (
         <Switch>
 

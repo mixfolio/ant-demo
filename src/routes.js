@@ -1,12 +1,16 @@
 import { 
     HOME_ROUTE,
     CARDS_ROUTE,
-    BASIC_TABLES_ROUTE
+    BASIC_TABLES_ROUTE,
+    FORMS_ROUTE,
+    GRID_ROUTE
  } from "./utils/consts";
 import Admin from './pages/Admin';
 import HomePage from './pages/HomePage';
 import CardsPage from './pages/CardsPage';
 import BasicTablesPage from './pages/BasicTablesPage';
+import FormsPage from "./pages/FormsPage";
+import GridPage from "./pages/GridPage";
 
 export const authRoutes = [
     {
@@ -27,5 +31,13 @@ export const publicRoutes = [
     {
         path: CARDS_ROUTE,
         Component: CardsPage
-    }
+    },
+    {
+        path: FORMS_ROUTE,
+        Component: FormsPage
+    },
+    {
+        path: GRID_ROUTE,
+        Component: GridPage
+    },
 ];

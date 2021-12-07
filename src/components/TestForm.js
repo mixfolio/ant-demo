@@ -2,9 +2,7 @@ import React from 'react'
 import { Form, Input, Space, Select, Button } from 'antd';
 const { Option } = Select;
 
-const field = {
-
-}
+const field = {};
 const TestForm = () => {
 
     /*  return <Row gutter={16}>
