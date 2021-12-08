@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col, Card, Divider, Typography } from 'antd'
 import Login from '../components/Login';
-import aprLogo from '../assets/images/aprLogo3.svg';
+import aprLogo from '../assets/images/apr-logo-2.svg';
 
 const {Meta} = Card;
 
