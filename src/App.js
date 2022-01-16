@@ -4,7 +4,9 @@ import LeftSider from "./components/LeftSider";
 import AppHeader from "./components/AppHeader";
 import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./components/AppRouter";
+import './App.less'
 const { Content } = Layout;
+
 
 
 const App = () => {

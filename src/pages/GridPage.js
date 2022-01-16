@@ -8,7 +8,7 @@ const {Meta} = Card;
 const {Title} = Typography;
 
 const GridPage = () => {
-    const style = { background: '#0092ff', color: '#fff', padding: 16, textAlign: 'center' };
+    const style = { background: '#7367f0', color: '#fff', padding: 16, textAlign: 'center' };
     return (
         <>
             <Divider orientation="left">Отступ между колонками статичный</Divider>
@@ -64,7 +64,7 @@ const GridPage = () => {
             <Row justify="center" align="middle" style={{ height:600 }}>
                 <Card
                     cover={
-                        <Row  justify="center" align="middle" style={{ background: '#03265E', height: 64 }}>
+                        <Row  justify="center" align="middle" style={{ background: '#7367f0', height: 64 }}>
                             <img src={aprLogo} />
                         </Row>}
                     // title={<Title level={5} style={{ color:'#fff' }} >Вход в систему</Title>}
