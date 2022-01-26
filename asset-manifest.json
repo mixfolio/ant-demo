@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/ant-demo/static/css/main.4c38fbf1.chunk.css",
+    "main.js": "/ant-demo/static/js/main.3cf42842.chunk.js",
+    "main.js.map": "/ant-demo/static/js/main.3cf42842.chunk.js.map",
+    "runtime-main.js": "/ant-demo/static/js/runtime-main.d43c0e70.js",
+    "runtime-main.js.map": "/ant-demo/static/js/runtime-main.d43c0e70.js.map",
+    "static/css/2.a95be28f.chunk.css": "/ant-demo/static/css/2.a95be28f.chunk.css",
+    "static/js/2.aaeacc9a.chunk.js": "/ant-demo/static/js/2.aaeacc9a.chunk.js",
+    "static/js/2.aaeacc9a.chunk.js.map": "/ant-demo/static/js/2.aaeacc9a.chunk.js.map",
+    "index.html": "/ant-demo/index.html",
+    "static/css/2.a95be28f.chunk.css.map": "/ant-demo/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.4c38fbf1.chunk.css.map": "/ant-demo/static/css/main.4c38fbf1.chunk.css.map",
+    "static/js/2.aaeacc9a.chunk.js.LICENSE.txt": "/ant-demo/static/js/2.aaeacc9a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/ant-demo/static/media/map.4dd594c0.png",
+    "static/media/aperture.f44e833a.svg": "/ant-demo/static/media/aperture.f44e833a.svg",
+    "static/media/apr-logo-2.089f893e.svg": "/ant-demo/static/media/apr-logo-2.089f893e.svg",
+    "static/media/arrow-down-circle.ac6d5f04.svg": "/ant-demo/static/media/arrow-down-circle.ac6d5f04.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d43c0e70.js",
+    "static/css/2.a95be28f.chunk.css",
+    "static/js/2.aaeacc9a.chunk.js",
+    "static/css/main.4c38fbf1.chunk.css",
+    "static/js/main.3cf42842.chunk.js"
+  ]
+}
