@@ -1,2 +1,2 @@
 import LeftSider from "./LeftSider";
-export default LeftSider;
+export default LeftSider ;

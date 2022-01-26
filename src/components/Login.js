@@ -1,5 +1,9 @@
 import React from 'react';
-import { Form, Input, Checkbox, Row, Button } from 'antd';
+import { Row,} from 'antd';
+import { Input } from './ui/Input';
+import { Checkbox } from './ui/Checkbox';
+import { Button } from './ui/Button';
+import { Form, FormItem } from './ui/Form';
 
 
 const Login = () => {
@@ -24,36 +28,37 @@ const Login = () => {
             // onFinishFailed={onFinishFailed}
             // autoComplete="off"
             >
-                <Form.Item
+                <FormItem
                     label="Логин"
                     name="username"
                     rules={[{ required: true, message: 'Please input your username!' }]}
                 >
                     <Input />
-                </Form.Item>
+                </FormItem>
 
-                <Form.Item
+                <FormItem
                     label="Пароль"
                     name="password"
                     rules={[{ required: true, message: 'Please input your password!' }]}
                 >
-                    <Input.Password />
-                </Form.Item>
+                    {/* <Input.Password /> */}
+                    <Input />
+                </FormItem>
                 <Row justify="space-between">
-                    <Form.Item name="remember" valuePropName="checked" >
+                    <FormItem name="remember" valuePropName="checked" >
                         <Checkbox>Запомнить меня</Checkbox>
-                    </Form.Item>
+                    </FormItem>
 
-                    <Form.Item name="remember" valuePropName="checked" >
+                    <FormItem name="remember" valuePropName="checked" >
                         <Button type="link" htmlType="button" >Забыли пароль</Button>
-                    </Form.Item>
+                    </FormItem>
                 </Row>
 
-                <Form.Item style={{ margin: 0 }}>
+                <FormItem style={{ margin: 0 }}>
                     <Button block size="large" type="primary" htmlType="submit">
                         Войти
                     </Button>
-                </Form.Item>
+                </FormItem>
             </Form>
         </>
     );

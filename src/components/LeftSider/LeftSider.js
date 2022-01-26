@@ -1,5 +1,10 @@
 import React from 'react';
-import { Menu, Layout, Badge } from 'antd';
+import { Layout, Badge, Menu, } from 'antd';
+// import { Menu,  MenuItem } from '../ui/Menu';
+
+
+
+
 import {
     HomeOutlined,
     FileDoneOutlined,
@@ -13,12 +18,13 @@ import {
 import { NavLink } from 'react-router-dom';
 
 const { Sider } = Layout;
+const {SubMenu} = Menu
 
 const LeftSider = ({ collapsed }) => {
     return (
         <Sider width="256" trigger={null} theme="light" collapsible collapsed={collapsed}>
             <div
-                style={{ height: '64px', background: '#03265E' }}
+                style={{ height: '64px', background: '#7367f0' }}
                 className="logo" />
             <Menu
                 mode="inline"
@@ -46,9 +52,15 @@ const LeftSider = ({ collapsed }) => {
                 <Menu.Item key="5" icon={<EnvironmentOutlined />}>
                     <NavLink to="/grid">Сетка</NavLink>
                 </Menu.Item>
-                <Menu.Item key="6" icon={<BankOutlined />}>ОКС</Menu.Item>
-                <Menu.Item key="7" icon={<TeamOutlined />}>Эксперты</Menu.Item>
-                <Menu.Item key="8" icon={<BookOutlined />}>Справочники</Menu.Item>
+                <Menu.Item key="6" icon={<BankOutlined />}>
+                    <NavLink to="/ui">UI-библиотека</NavLink>
+                </Menu.Item>
+                <SubMenu key="sub1" icon={<BookOutlined />} title="Компоненты">
+                    <Menu.Item key="7" icon={<TeamOutlined />}>Кнопки</Menu.Item>
+                    <Menu.Item key="8" icon={<BookOutlined />}>Формы</Menu.Item>
+                </SubMenu>
+                <Menu.Item key="9" icon={<TeamOutlined />}>Эксперты</Menu.Item>
+                <Menu.Item key="10" icon={<BookOutlined />}>Справочники</Menu.Item>
 
             </Menu>
         </Sider>

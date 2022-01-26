@@ -64,12 +64,12 @@ const GridPage = () => {
             <Row justify="center" align="middle" style={{ height:600 }}>
                 <Card
                     cover={
-                        <Row  justify="center" align="middle" style={{ background: '#03265E', height: 64 }}>
+                        <Row  justify="center" align="middle" style={{ background: '#7367f0', height: 64 }}>
                             <img src={aprLogo} />
                         </Row>}
                     // title={<Title level={5} style={{ color:'#fff' }} >Вход в систему</Title>}
                     headStyle={{ background: '#03265E', color: '#fff' }}
-                    style={{ width:400 }}
+                    style={{ width:400, borderRadius: '8px', overflow: 'hidden', boxShadow: '0 4px 24px 0 rgba(34,41,47,.1)' }}
                 >
                     <Meta title={<Title level={4} style={{ marginBottom: 16, textAlign:'center' }}  >Вход в систему</Title>}/>
                     <Login/>

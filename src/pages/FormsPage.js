@@ -1,6 +1,9 @@
 import React from 'react';
-import { Row, Form, Col, Input, InputNumber, Button, Space, Select, Card } from 'antd';
+import { Form, Row, InputNumber, Space, Select, Card } from 'antd';
 import { CloseCircleOutlined } from '@ant-design/icons';
+// import { Form } from '../components/ui/Form';
+import { Input } from '../components/ui/Input';
+import { Button } from '../components/ui/Button';
 
 const { Option } = Select;
 
@@ -26,7 +29,7 @@ const FormsPage = () => {
                         </Select>
                     </Form.Item>
                     <Form.Item label='Введите очень длинное имя пользователя'>
-                        <Space size="middle" style={{ border: '1px solid red', width: '100%' }}>
+                        <Space size="middle" style={{ width: '100%' }}>
                             <Input placeholder="от" />
                             <Input placeholder="до" />
                         </Space>

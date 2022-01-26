@@ -22,13 +22,15 @@ const AppHeader = ({toggle, collapsed}) => {
                 })}
                 <GlobalOutlined style={{ fontSize: 24 }} />
             </Space>
+           
             <div className="user-profile">
                 <Space>
                     <SearchOutlined style={{ fontSize: 24 }} />
                     <Badge count={5}>
                         <BellOutlined style={{ fontSize: 24 }} />
                     </Badge>
-                    <Title level={5} type="secondary">Евсеев К.В.</Title>
+                    <Title level={5} style={{ margin: 0 }} type="secondary">Евсеев К.В.</Title>
+
                     <Avatar size="large" icon={<UserOutlined />} />
                 </Space>
             </div>

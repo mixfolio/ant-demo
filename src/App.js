@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Layout} from "antd";
+import { Layout } from "antd";
 import LeftSider from "./components/LeftSider";
 import AppHeader from "./components/AppHeader";
 import { BrowserRouter } from "react-router-dom";
@@ -28,23 +28,23 @@ const App = () => {
 
   return (
     <BrowserRouter>
-    <Layout
-      style={{ minHeight: "100%" }}
-    >
-      <LeftSider collapsed={collapsed} />
-      <Layout className="site-layout">
-        <AppHeader toggle={toggle} collapsed={collapsed} />
-        <Content
-          style={{
-            padding: '0 24px ',
-            position: 'relative',
-            overflow: 'hidden'
-          }}
-        >
-          <AppRouter />
-        </Content>
+      <Layout
+        style={{ minHeight: "100%" }}
+      >
+        <LeftSider collapsed={collapsed} />
+        <Layout className="site-layout">
+          <AppHeader toggle={toggle} collapsed={collapsed} />
+          <Content
+            style={{
+              padding: '0 24px ',
+              position: 'relative',
+              overflow: 'hidden'
+            }}
+          >
+            <AppRouter />
+          </Content>
+        </Layout>
       </Layout>
-    </Layout>
     </BrowserRouter>
   );
 
